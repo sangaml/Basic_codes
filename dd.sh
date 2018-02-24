@@ -25,6 +25,7 @@ apt-get install $1 -y  >>$LOGFILE 2>>$ERRORFILE
 echo -e "$1 installed"
 }
 ##########
+clear
 echo -n -e"Enter the Input file/path [if]:"
 read if
 echo -n -e "Enter the Output file/path [op]:"
@@ -34,4 +35,3 @@ read bs
 echo -n -e "Enter the count:"
 if check_install pv; then echo "installed"; else install_package pv; fi
 dd if=$if bs=$bs count=$count | pv | of=$of 
-
