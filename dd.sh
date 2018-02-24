@@ -26,7 +26,7 @@ echo -e "$1 installed"
 }
 ##########
 clear
-echo -n -e"Enter the Input file/path [if]:"
+echo -n -e "Enter the Input file/path [if]:"
 read if
 echo -n -e "Enter the Output file/path [op]:"
 read of
