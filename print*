@@ -1,0 +1,9 @@
+#!/bin/bash
+RCol='\033[0m'
+Red='\033[0;31m'
+str=*
+for i in 1 2 3 4 5 
+do 
+	echo -e "${Red}$str${RCol}"
+	str="$str *"
+done
